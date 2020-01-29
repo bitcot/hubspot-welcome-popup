@@ -1,0 +1,24 @@
+<div id="myModal" class="modal" style="display: none;" data-period="{{ module.during_period_time }}"><!-- Modal content -->
+<div class="modal-content"><span class="close">×</span>
+<div class="modal__inner"><label class="modal__close" for="modal-1"></label>
+<h2>{{ module.pop_up_heading }}</h2>
+<p>
+  {% if module.image_field.src %}
+	<img src="{{ module.image_field.src }}" alt="{{ module.image_field.alt }}">
+  {% endif %} 
+  <span>{{ module.modal_content }}</span> 
+  </p>
+  
+  {% set href = module.link_field.url.href %}
+    {% if module.link_field.url.type is equalto "EMAIL_ADDRESS" %}
+      {% set href = "mailto:" + href %}
+    {% endif %}
+    <a href="{{ href }}"
+      {% if module.link_field.open_in_new_tab %}target="_blank"{% endif %}
+      {% if module.link_field.no_follow %}rel="nofollow"{% endif %}
+      class="shop_Btn" >
+      {{ module.button_name }}
+    </a>
+</div>
+</div>
+</div>
