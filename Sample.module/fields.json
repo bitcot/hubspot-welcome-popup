@@ -1,0 +1,77 @@
+[ {
+  "id" : "0a05f94d-5821-f5f2-3bbf-6496fed22121",
+  "name" : "pop_up_heading",
+  "label" : "Pop-up Heading",
+  "required" : true,
+  "locked" : true,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Welcome to Our New Store!!"
+}, {
+  "id" : "4bb50ddb-4b35-fbaf-c027-0969651cc29a",
+  "name" : "during_period_time",
+  "label" : "you can select how many times you want the popup be shown after closed ?",
+  "required" : false,
+  "locked" : true,
+  "display" : "select",
+  "choices" : [ [ "2", "2 Minutes" ], [ "30", "30 Minutes" ], [ "60", "1 Hours" ], [ "360", "6 Hours" ], [ "720", "12 Hours" ], [ "1440", "1 day" ], [ "999999999999999999999999", "No Show Again" ] ],
+  "type" : "choice",
+  "default" : "999999999999999999999999"
+}, {
+  "id" : "7cec06ad-46dd-34ea-951a-59bfdb190fa6",
+  "name" : "modal_content",
+  "label" : "Pop-up Description",
+  "required" : false,
+  "locked" : true,
+  "type" : "richtext",
+  "default" : "<p>Let's go up in here, and start having some fun The very fact that you're aware of suffering is enough reason to be overjoyed that you're alive and can experience it. It's a super day, so why not make a beautiful sky??</p>"
+}, {
+  "id" : "4270ca08-68c9-2055-30b7-542c9f80ca3c",
+  "name" : "link_field",
+  "label" : "Button Link",
+  "required" : true,
+  "locked" : true,
+  "supported_types" : [ "EXTERNAL" ],
+  "type" : "link",
+  "default" : {
+    "url" : {
+      "type" : "EXTERNAL",
+      "href" : "/home",
+      "content_id" : null
+    },
+    "open_in_new_tab" : false,
+    "no_follow" : false
+  }
+}, {
+  "id" : "cb440a0a-b4dc-e26a-5f33-a8e3345d0563",
+  "name" : "button_name",
+  "label" : "Button Name",
+  "required" : true,
+  "locked" : true,
+  "validation_regex" : "",
+  "placeholder" : "Please Enter Button name",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Shop Now!!"
+}, {
+  "id" : "e7780455-9761-9dd5-94db-9d69f6b63579",
+  "name" : "image_field",
+  "label" : "Image",
+  "required" : false,
+  "locked" : true,
+  "responsive" : true,
+  "resizable" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://shop.oxyensure.com/product_images/uploaded_images/oxyensure-shop.jpg",
+    "alt" : "oxyensure-shop",
+    "width" : 1500,
+    "height" : 1001,
+    "max_width" : 1500,
+    "max_height" : 1001
+  }
+} ]
